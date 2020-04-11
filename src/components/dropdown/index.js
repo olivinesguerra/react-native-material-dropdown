@@ -11,9 +11,12 @@ import {
   Platform,
   ViewPropTypes,
   I18nManager,
+  Image
 } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import { TextField } from 'react-native-material-textfield';
+
+import Triangle from './ic_drop_down_icon.png';
 
 import DropdownItem from '../item';
 import styles from './styles';
@@ -556,7 +559,8 @@ export default class Dropdown extends PureComponent {
     return (
       <View style={styles.accessory}>
         <View style={styles.triangleContainer}>
-          <View style={[styles.triangle, triangleStyle]} />
+          <Image style={{}} source={Triangle} />
+          {/* <View style={[styles.triangle, triangleStyle]} /> */}
         </View>
       </View>
     );
