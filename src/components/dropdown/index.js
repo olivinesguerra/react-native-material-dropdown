@@ -512,7 +512,7 @@ export default class Dropdown extends PureComponent {
         labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
 
         {...props}
-
+        underlineColorAndroid="transparent"
         value={title}
         editable={false}
         onChangeText={undefined}
