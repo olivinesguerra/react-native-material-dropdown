@@ -507,15 +507,10 @@ export default class Dropdown extends PureComponent {
       String(title);
 
     return (
-      <TextField
-        label=''
-        labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
-
+      <Text
         {...props}
         underlineColorAndroid="transparent"
         value={title}
-        editable={false}
-        onChangeText={undefined}
       />
     );
   }
