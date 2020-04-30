@@ -507,10 +507,16 @@ export default class Dropdown extends PureComponent {
       String(title);
 
     return (
-      <Text
-        style={{ flex: 1 , height: 50, color:  "#47DFF1" }}>
-          { title }
-        </Text>
+      <TextField
+        label=''
+        labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
+
+        {...props}
+        underlineColorAndroid="transparent"
+        value={title}
+        editable={false}
+        onChangeText={undefined}
+      />
     );
   }
 
