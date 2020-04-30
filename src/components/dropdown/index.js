@@ -508,10 +508,9 @@ export default class Dropdown extends PureComponent {
 
     return (
       <Text
-        {...props}
-        underlineColorAndroid="transparent"
-        value={title}
-      />
+        style={{ flex: 1 , height: 50, color:  "#47DFF1" }}>
+          { title }
+        </Text>
     );
   }
 
