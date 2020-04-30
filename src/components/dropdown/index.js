@@ -232,7 +232,6 @@ export default class Dropdown extends PureComponent {
       event.nativeEvent.locationX -= this.rippleInsets().left;
 
       /* Start ripple directly from event */
-      this.ripple.startRipple(event);
     }
 
     if (!itemCount) {
